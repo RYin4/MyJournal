@@ -24,8 +24,11 @@ module.exports.routes = {
   '/posts':'PostsController.posts',
 
   //slug
-  '/findById:postId':'PostsController.findById',
-  '/create':'PostsController.create'
+  'GET /post/:postId':'PostsController.findById',
+  'POST /post':'PostsController.create'
+
+
+  
 
 
   /***************************************************************************
