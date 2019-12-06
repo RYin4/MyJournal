@@ -21,6 +21,12 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
 
+  '/posts':'PostsController.posts',
+
+  //slug
+  '/findById:postId':'PostsController.findById',
+  '/create':'PostsController.create'
+
 
   /***************************************************************************
   *                                                                          *
