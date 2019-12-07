@@ -23,7 +23,7 @@
             try {
                 const response = await axios.delete(url)
                 console.log(response)
-                location.reload()
+                window.location.href = window.location.href
             } catch (err) {
                 console.error(err.toString())
                 alert(err.toString())
